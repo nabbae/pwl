@@ -5,135 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan Website</title>
-    
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 0 auto;
-
-        }
-
-        footer {
-            padding: 20px;
-            background-color: #E78F81;
-            color: aliceblue;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-            overflow: auto;
-        }
-
-        #content {
-            float: right;
-            width: 75%;
-        }
-
-        aside {
-            float: left;
-            width: 25%;
-            padding-right: 10px;
-        }
-
-        header {
-            display: inline;
-
-        }
-
-        @media screen and (max-width:1000px) {
-
-            #content,
-            aside {
-                width: 100%;
-                padding: 0;
-            }
-        }
-
-        nav {
-            background-color: #FFF5CD;
-            padding: 5px;
-            position: sticky;
-            top: 0%;
-            text-align: center;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 20px;
-            list-style-type: none;
-
-        }
-
-        nav a {
-            font-size: 18px;
-            font-weight: 400;
-            text-decoration: none;
-            color: gray;
-
-        }
-
-        nav a:hover {
-            color: black;
-
-        }
-
-        .jumbotron {
-            background-color: #B7E0FF;
-            text-align: center;
-            font-size: 14px;
-            padding: 20px;
-        }
-
-        .jumbotron h1 {
-            text-align: center;
-            color: #E78F81;
-        }
-
-        .gambar {
-            width: 70%;
-            max-height: 300px;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px 0 black;
-            border-radius: 5px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .sm-gambar {
-            width: 100%;
-            object-position: center;
-
-        }
-
-        figcaption {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .profile-card {
-            text-align: center;
-            box-shadow: 0 4px 8px 0 black;
-            border-radius: 5px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="{{ asset('style/style.css') }}">
 </head>
 
 <body>
-    {{-- ========================================
-    KODE HTML ANDA
-    ======================================== --}}
     <header>
         <div class="jumbotron">
             <h1>Manfaat Belajar Coding untuk Anak</h1>
@@ -143,10 +18,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pelatihan</a></li>
-                <li><a href="#">Lorem</a></li>
-
+                <li><a href="/">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -169,6 +41,7 @@
                     mengimplementasikan solusi. </p>
                 <p>Dengan demikian, anak-anak bisa mulai mengasah kemampuan problem solving mereka saat belajar coding.
                 </p>
+                <a href="/problem-solving" class="learn-more">Learn more...</a>
             </article>
             <article id="thinking" class="card">
                 <h2>Meningkatkan Kemampuan Computational Thinking</h2>
@@ -182,6 +55,7 @@
                 <p>Melalui coding, anak-anak memperoleh pemahaman yang lebih baik tentang pola berpikir algoritmik dan
                     dapat membantu anak dalam memecahkan masalah. Kemampuan ini juga memiliki dampak positif yang jelas
                     pada kinerja anak dalam jangka panjang, misalnya saat bekerja di masa depan nanti.</p>
+                <a href="/computational-thinking" class="learn-more">Learn more...</a>
             </article>
             <article id="kreativitas" class="card">
                 <h2>Meningkatkan Kreativitas</h2>
@@ -201,26 +75,7 @@
                     artistik, dan intuitif.</p>
                 <p>Selain menggunakan komputer, Sebagai langkah pertama orangtua juga dapat mengenalkan coding dari
                     permainan.</p>
-
-                <section>
-                    <h3>Bermain Menyusun Lego</h3>
-                    <img src="images/kidsmaenlego.jpg" alt="Bermain Menyusun Lego" class="gambar">
-                    <p>Menyusun LEGO mengharuskan anak-anak untuk berpikir tentang bagaimana mereka ingin membangun
-                        sesuatu, memecahkan masalah tentang cara menyatukan berbagai potongan, dan merencanakan
-                        langkah-langkah yang diperlukan untuk menyelesaikannya. Ini mirip dengan cara programmer
-                        memecahkan masalah dengan memecahnya menjadi bagian-bagian kecil dan kemudian menulis kode untuk
-                        setiap bagian.</p>
-                </section>
-
-                <section>
-                    <h3>Bermain Game minecraft</h3>
-                    <img src="images/menkrep.png" alt="Bermain Game minecraft" class="gambar">
-                    <p>Dengan bermain game minecraft, secara tanpa sadar anak akan belajar dasar-dasar dari coding
-                        tersebut. Selain itu, di setiap levelnya permainan ini akan mengajak para pemain untuk berpikir
-                        logis, kreatif, dan efisien di setiap tahapnya untuk membangun kehidupan di dalam game Minecraft
-                        tersebut.</p>
-                </section>
-
+                <a href="kreativitas" class="learn-more">Learn more...</a>
             </article>
         </div>
         <aside>
